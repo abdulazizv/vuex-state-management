@@ -1,6 +1,6 @@
 <template>
     <div class="w-full border p-5 shadow-lg my-5">
-        <button @click="$route.params.go(-1)" class="bg-cyan-500 px-3 py-2 rounded-lg text-white font-bold focus:ring-4 focus:ring-cyan-600">GO BACK</button>            
+        <button @click="goBack" class="bg-cyan-500 px-3 py-2 rounded-lg text-white font-bold focus:ring-4 focus:ring-cyan-600">GO BACK</button>            
         </div>
     <div class="p-5 w-3/4 shadow m-4 border">
         
@@ -42,7 +42,9 @@ export default {
                 console.log(error)
             }
         },
-        async goBack()
+        async goBack() {
+            window.location.back()
+        }
     },
     mounted() {
         this.getId(),
