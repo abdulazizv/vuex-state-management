@@ -7,6 +7,7 @@
         <li><RouterLink to="/">Home</RouterLink></li>
         <li><RouterLink to="/post">Post</RouterLink></li>
         <li><RouterLink to="/user">Users</RouterLink></li>
+        <li><RouterLink to="/about">About</RouterLink></li>
       </ul>
     </nav>
   </div>
@@ -34,7 +35,7 @@ export default {
   .router-link-active {
     font-weight: bold;
     text-decoration: underline;
-    color:white;
+    color: white  ;
     font-size: larger;
   }
   .main {
